@@ -1,0 +1,18 @@
+[tool.poetry]
+name = "eli-blog"
+version = "0.1.0"
+description = "Poetry environment for Eli's blog"
+authors = ["Eli Kravitz"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.11"
+pandas = "^2.0.3"
+tiktoken = "^0.4.0"
+openai = "^0.27.9"
+libpath = "^0.0.0.0"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"

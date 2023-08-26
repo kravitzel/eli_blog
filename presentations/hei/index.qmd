@@ -1,0 +1,15 @@
+---
+title: "Reevaluating Composite Scores with Flexible Regression and Variable Selection"
+author: "Eli Kravitz"
+date: "2020-03-01"
+format: html
+image: "apples.jpg"
+---
+
+I planned to give this presentation (or a variation of it) at [International Conference on Diet and Activity Methods (ICDAM)](https://www.icdamportal.org) in the spring of 2020. Certain global events prevented me from traveling in 2020, so I never had a chance to give this presentation.
+
+The Healthy Eating Index (HEI) is a set of guidelines for what types of foods Americans should consume. A perfect diet receives a score of 100 and a poor diet receives a score of 0.
+
+This presentation shows how you can use a Lasso penalty to adjust the relative importance of different good groups. The Lasso penalty allows the relative importance to go to 0, suggesting that food group should not be consumed.
+
+[Link to presentation](hei_variable_selection.pdf)
