@@ -1,0 +1,208 @@
+---
+title: "LLM Aided Webscraping"
+subtitle: "Retreival Augment Generation"
+author: "Eli Kravitz"
+date: "2023-08-04"
+format: html
+editor: visual
+engine: knitr
+image: "robot.png"
+---
+
+## Introduction
+
+[Small Business Development Centers](https://www.sba.gov/local-assistance/resource-partners/small-business-development-centers-sbdc "Small Business Administration's SBDC page") (SBDCs) provide counseling and resources to entrepreneurs and small business owners. SBDCs are typically funded by federal, state, and local governments and partnerships with educational institutions, economic development agencies, and private organizations. The primary goal of SBDCs
+
+is to support the growth and development of small businesses in their communities.
+
+We were ask to compile a comprehensive list of SBDCs. Additionally, we were required to outline the specific services offered by each SBDC (such as business counseling, tax assistance, etc.) and provide details about the staff ar each center.
+
+## The Pivot to AI
+
+Finding a list of all SBDCs was straightforward; they can be scraped from the [Find Your SBDC tool](https://americassbdc.org/find-your-sbdc/ "America's SBDC Find Your SBDC tool") provided by America's SBDC. We found over 700 SBDCs using this tool, each with their own unique website. Manually going through each page is not feasible. Our original plan to extract relevant information with XPath or CSS selectors was not possible. SBDC websites are not standardized. Building selectors that generally work over such a wide variety of websites is impossible.
+
+For each of the 700+ SBDC websites we use Python's [Beautiful Soup](https://www.crummy.com/software/BeautifulSoup/bs4/doc/ "Beautiful Soup homepage") library to retrieve the text from every subpage of the SBDC's website. Ideally, we would provide all this text to ChatGPT API as context in a prompt then ask ChatGPT to retrieve the staff and services for us. GPT-4 has a 8194 token limit (≈3000 words) which includes the response from GPT-4. We limit our context to 3000 tokens to leave tokens remaining for our prompt and answer.
+
+This approach is adapted from [webcrawler notebook](https://github.com/openai/openai-cookbook/blob/main/apps/web-crawl-q-and-a/web-qa.ipynb "Webcrawler Jupyter Notebook") from the [OpenAI Cookbook](https://github.com/openai/openai-cookbook "OpenAI Cookbook").
+
+## Webscraping
+
+As an example, I'm showing text scraped from the SBDC website for [Tyler, TX](https://tylersbdc.com/ "Tyler, Texas SBDC homepage") and every sub-page of the main URL. Results are stored in a `pandas.DataFrame`.
+
+```{python}
+import pandas as pd
+import numpy as np
+
+df = pd.read_csv("processed/scraped.csv", index_col=None, header=0)
+```
+
+```{r print_table}
+#| echo: false
+#| message: false
+#| warning: false
+library(dplyr)
+library(reticulate)
+py$df %>% 
+  rmarkdown::paged_table(option = list("cols.print" = 2,
+                                       "rows.print" = 5))
+
+```
+
+You can see text scraped from one page in more detail by expanding the code chunk below:
+
+```{python example_text}
+#| code-fold: true
+#| code-overflow: wrap
+# example_text = "Business Advice | Tyler Small Business Development Center Follow Us x a ! 903-510-2975 Directions Business Advising The SBDC offers free one-on-one advising for start-up and existing businesses in the retail, wholesale, manufacturing, and service industries. Our Advisors can help you. Prepare financial projections for loan package. Conduct financial analysis and improve profitability Develop competitive strategies  Cope with government regulation and taxes Design a marketing plan Understand and secure loans and other sources of capital Keep abreast of current technology Brainstorming and research Restructure debt analysis Prepackage Interview Process for SBA Loans Turnaround Advising Follow these steps to meet with a business advisor Step 1 Fill out/ download the following forms. Start-up Business Assessment Existing Business Assessment Fill out the Form 641/Client Agreement Step 2: You will be contacted by our office to direct you to the appropriate resource.  How to Start a Business and Market lt on Social Media Tyler SBDC offers a low-cost monthly class for individuals interested in starting a small business. This single-session class provides an excellent opportunity for individuals to determine if small business ownership is right for them. This class also covers current social media trends and how to use platforms such as Instagram, Facebook, YouTube, and more to market their new business. This class is held on Tuesdays as follows: Tuesday 6/6 6-8 pm Tuesday 7/11 6-8 pm Tuesday 8/1 6-8 pm Location: RTDC 112 Registration Fee: $25 Call TJC School of Continuing Studies at 903-510-2900 to register and pay Contact Us"
+```
+
+### Embedding
+
+#### Estimating Cost and Resources
+
+First, we estimate how much of our 8194 token limit will be used by this text using the `tiktoken` library ([Github](https://github.com/openai/tiktoken "Tiktoken Github Link")). `tiktoken` is a open-source byte pair encoding ([BPE](https://www.geeksforgeeks.org/byte-pair-encoding-bpe-in-nlp/#:~:text=Byte%2DPair%20Encoding%20(BPE)%20is%20a%20compression%20algorithm%20used,text%20classification%2C%20and%20text%20generation.)) tokenizer. You can use this approximate how many tokens you'll send to the Chat-GPT API. The example text uses about 329 tokens.
+
+```{python}
+import tiktoken 
+tokenizer = tiktoken.get_encoding("cl100k_base")
+
+df['n_tokens'] = df['text'].apply(lambda x: len(tokenizer.encode(x)))
+```
+
+```{r}
+#| echo: false
+py$df %>% 
+  select(url, n_tokens, text) %>% 
+  rmarkdown::paged_table()
+
+```
+
+### Embedding Text
+
+Note: You'll need to make an access key for OpenAI to run any of the code in this section
+
+Then we create embeddings for each page using the OpenAI API. Embeddings translate text into numeric vectors. When two vector embeddings are close to each other (low distance), we expect the text to be similar in meaning. OpenAI offers a number of [embedding models](https://platform.openai.com/docs/guides/embeddings "OpenAI embeddings") for users to choose from. At the time of writing this, `text-embedding-ada-002` is is the cheapest option and [outperforms the other models](https://openai.com/blog/new-and-improved-embedding-model "Comparing OpenAI embedding models").
+
+Below is example code (not run), to show how to use OpenAI embedding models. (I didn't want to pay for any more uses of the OpenAI API or host a reproducible example on this site. )
+
+```{python}
+#| eval: false
+#| code-overflow: wrap
+import tiktoken 
+from openai import Embedding
+
+df["embeddings"] = df["text"].apply(lambda x: Embedding.create(input=x,model="text-embedding-ada-002",temperature=0.25)["data"][0]["embedding"])
+```
+
+```{python}
+#| echo: false
+df = pd.read_csv("processed/embeddings.csv")
+df["embeddings"] = df["embeddings"].apply(eval).apply(np.array)
+```
+
+## Informational Retrieval
+
+We'll use the following query:
+
+```{python}
+#| eval: false
+#| code-overflow: wrap
+query = f"Provide a list of help, resources, or services offered by {sbdc_name}. Each list item should begin with a dash and end with a newline. Summarize each list item into at most 2 to 4 words."
+```
+
+We embed the query then compare the distance between it and each webpage's text. We rank the text by most relevant to our query to least relevant.
+
+Example code:
+
+```{python}
+#| eval: false
+#| code-overflow: wrap
+from numpy import dot
+from numpy.linalg import norm
+
+def cos_dist(a, b):
+  1 - dot(a, b)/(norm(a) * norm(b))
+  
+q_embedding = Embedding.create(input=question, engine="text-embedding-ada-002")["data"][0]["embedding"]
+
+# Get the distance between the query and each embedded website text
+df["distances"] = [cos_dist(q_embedding, embedding) for embedding in df["embeddings"]]
+  
+# Smallest distance means more relevant
+df["distances"] = df.sort_values("distances", ascending=True)
+```
+
+This is an example of what we would see at this point.
+
+| **Relevance** | **Website**     | **distancse** | **n_tokens** | **Cumulative Tokens Used** |
+|--------------|--------------|--------------|--------------|------------------|
+| 1             | Resources       | 0.158         | 459          | 459                        |
+| 2             | Business Advice | 0.16          | 358          | 817                        |
+| 3             | About SBDC      | 0.173         | 380          | 1197                       |
+| 4             | About Us        | 0.173         | 381          | 1578                       |
+| 5             | Stories         | 0.18          | 342          | 1920                       |
+| 6             | Who We Are      | 0.189         | 652          | 2572                       |
+| 7             | Events          | 0.194         | 577          | 3149                       |
+
+We append the most relevant text until we hit our GPT-4 API character limit
+
+```{python}
+#| eval: false
+
+context = []
+cur_len = 0
+max_len = 3000
+
+# Sort by distance and add the text to the context until the context is too long
+for i, row in df.sort_values("distances", ascending=True).iterrows():
+  # Add the length of the text to the current length plus some padding for separators
+  cur_len += row["n_tokens"] + 4
+  
+  # If the context is too long, break
+  if cur_len > max_len:
+    break
+  
+  # Else add it to the text that is being returned
+  context.append(row["text"])
+  
+  # Return the context
+  return "\n\n###\n\n".join(context)
+
+```
+
+## Prompting GPT-4 With Context
+
+Finally, we submit our query to GPT-4 along with the context we've found in the previous steps.
+
+```{python}
+#| eval: false
+
+response = openai.ChatCompletion.create(
+            messages=[
+                {
+                    "role": "system",
+                    "content": "You are a web scraping assistant. Answer the user's questions based"
+                    + "on the context below. If the question can't be answered based on the context,"
+                    + f'say "I don\'t know"\n\nContext: {context}',
+                },
+                {
+                    "role": "user",
+                    "content": question_context.question,
+                },
+            ],
+            temperature=0.15,
+            top_p=1,
+            frequency_penalty=0,
+            presence_penalty=0,
+            stop=stop_sequence,
+            model=model,
+        )
+response["choices"][0]["message"]["content"]
+```
+
+```{python}
+#| echo: false
+print("""
+- Business Advising\n- Business Classes\n- Start-up Assistance\n- Existing Business Development\n- Training Programs\n- Research Capabilities\n- Business Plan Preparation\n- SBA Loan Paperwork Preparation\n- Practical Business Assistance\n- Mailing List with Resources and Information\n- Start-up Business Assessment\n- Existing Business Assessment
+""")
+```

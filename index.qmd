@@ -1,0 +1,21 @@
+---
+title: "Eli Kravitz, PhD"
+image: profile.jpg
+about:
+  template: jolla
+  links:
+    - icon: linkedin
+      text: LinkedIn
+      href: https://www.linkedin.com/in/eli-k-36930067/
+    - icon: stack-overflow
+      text: Stack Exchange
+      href: https://stats.stackexchange.com/users/45453/eli
+---
+
+Hello!
+
+I am a statistician and data scientist. I use statistics and machine learning to help federal agencies answer open-ended research questions. This includes sorting through large, messy datasets, benchmarking models, and building data processing pipelines. Before this, I designed clinical trials for the life sciences industry.
+
+Most of my work involves extensive programming in R and Python. I am a long-time R user who keeps up with latest developments in the language. You can see some of my thoughts on R and Python in the [Posts](blog,qmd) section of this website. I occasionally answer statistics and programming questions on [Stack Exchange](https://stats.stackexchange.com/users/45453/eli).
+
+In my free time I play music, cook and try (often unsuccessfully) to manage my border collie. You can see me doing the latter two [here](/photos/grilling.jpeg).

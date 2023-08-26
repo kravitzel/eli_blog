@@ -1,0 +1,11 @@
+---
+title: "Graphical Hypothesis Testing"
+author: "Eli Kravitz"
+date: "2021-02-01"
+format: html
+image: "graphical_testing.jpg"
+---
+
+This presentation began as a proposed design for a Phase 2 trial. After Phase 1 results, development was stopped and this trial was never considered. I reworked the presentation into a tutorial/workshop for using graphical testing in a multi-arm trial. This was my first experiment with plotly and Rmarkdown slides, so excuse any strange formatting.
+
+[Link to presentation](graphical_testing.html)

@@ -1,0 +1,13 @@
+---
+title: "Dynamic Predictions for the Current Population Survey"
+author: "Eli Kravitz"
+date: "2023-06-11"
+format: html
+image: "survey.jpg"
+---
+
+In May of 2023, I gave a presentation at the American Association for Public Opinion Research (AAPOR) conference. This presentation was given to an audience of, mostly, social scientists, so I omitted some of the technical details.
+
+Our goal is to predict who will respond to the Current Population Survey (CPS). Survey interviews happen over 10 days. To account for time varying effects, we stratifiy our data by interview day and fit an XGBoost model for each day.
+
+[Link to presentation](aapor_presentation.pdf)

@@ -1,0 +1,11 @@
+---
+title: "Yemen Analysis Featured by World Bank"
+author: "Eli Kravitz"
+date: "2023-07-15"
+categories: [news, analysis]
+image: "yemen_map.png"
+---
+
+We were asked to analyze the economic and environmental impact of the [Yemeni Civil War](#0). I was responsible for analyzing changes in commodity prices during this period of time. In around 2016 the Yemeni economy began to diverge in areas controlled by Yemen's internationally recognized government (IRG) and areas of de facto authority (DFA). IRG controlled areas faced high inflation, while prices remained relatively stable in DFA control areas.
+
+Our work was feature on the [World Bank's Blog](https://blogs.worldbank.org/arabvoices/yemen-using-geospatial-data-and-modeling-show-economic-impact-conflict). A full report is available through the World Bank: [Yemen Country Economic Memorandum: Glimmers of Hope in Dark Times](https://documents1.worldbank.org/curated/en/099050923091537357/pdf/P17826203eb7ac0030b5540af4456d0dd7c.pdf). Most of my work is in Section 2, around page 21.

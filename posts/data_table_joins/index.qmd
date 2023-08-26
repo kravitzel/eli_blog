@@ -1,0 +1,112 @@
+---
+title: "Data.table's (Not Quite) Left Joins"
+author: "Eli Kravitz"
+date: "2023-08-19"
+categories: [R, data.table]
+image: "wood_join.jpg"
+format: 
+  html:
+    df-print: default
+---
+
+## Introduction
+
+Like many other R users, I've integrated `data.table` ([CRAN](https://cran.r-project.org/web/packages/data.table/vignettes/datatable-intro.html "data.table CRAN vignette"), [Github](https://github.com/Rdatatable/data.table "data.table Github page")) into my R workflow. `data.table` is [lightning-fast](https://h2oai.github.io/db-benchmark/ "database and dataframe benchmarks"), with common table operations running faster than most R, Python, or standalone alternative. Many people prefer `data.table`'s [concise syntax](https://atrebas.github.io/post/2020-06-17-datatable-introduction/ "A gentle introduction to data.table") to `tidyverse` / `dplyr` [style of pipes and verbs](https://dplyr.tidyverse.org/ "dplyr homepage"). (I am *not* one of those people. I mostly use the `tidytable`[package](https://github.com/markfairbanks/tidytable "tidytable homepage") which implements `tidyverse`syntax for `data.tables`).
+
+For as much as I appreciate `data.table`, it often lacks proper documentation. In particular, the package has no documentation on joins. That leaves the users to learn `data.table` joins by trial-and-error or through [second hand resources](https://gist.github.com/nacnudus/ef3b22b79164bbf9c0ebafbf558f22a0 "Github gist for data.table joins") and [Stack Overflow](https://stackoverflow.com/a/34600831/2838936 "StackOverflow link #2") [answers](https://stackoverflow.com/questions/12773822/why-does-xy-join-of-data-tables-not-allow-a-full-outer-join-or-a-left-join "StackOverflow link #2"). This fragmented documentation can mask some eccentricities of `data.table`.
+
+## The Left Join That Wasn't
+
+As of mid 2023 , the first Google search result for "data.table left join" is this [Stack Overflow answer](https://stackoverflow.com/a/34600831/2838936 "Stack Overflow left-join") and [this Stack Overflow answer](https://stackoverflow.com/a/54313203/2838936 "Stack Overflow answer #2"). Unfortunately, this code **does not produce a left join**, at least in the traditional SQL sense. Props to Stack Overflow user [Helen](https://stackoverflow.com/users/2820289/helen "Stack Overflow user page for Helen"){style="caret-color: white; font-size: 14pt;"} for pointing [this issue](https://stackoverflow.com/a/65856995/2838936){style="caret-color: white; font-size: 14pt;"}. To be fair, this misconception is widespread, so it must be coming from many places.
+
+### The Problem
+
+The common advice you'll get for joining `data.tables` is to use `:=` operator to update the left table *by reference* ("in place") with the new column(s) from the right table. Pseudo-code would look something like this:
+
+```{r eval = FALSE}
+LEFT_TABLE[RIGHT_TABLE, on="id", col_from_left := i.col_from_right]
+```
+
+The problem is `data.table` does not return multiple matches when you modify by reference. It returns *only* the last match, instead of returning all matches. See below:
+
+```{r}
+library(data.table)
+A = data.table(id = c("x", "y", "z"), 
+               a_var = c(100, 200, 300))
+B = data.table(id = rep(c("w", "x", "y", "z"), each = 2), 
+               b_var = seq(1, 8, by = 1))
+
+# "Left join". New values added by reference 
+A[B, on = "id", new_var := i.b_var]
+
+print(A)
+```
+
+This returns the wrong number of rows. We should get 6 rows total: each row of A should match two rows in B.
+
+Compare this with other implementations of left join, and you'll see the expected behavior.
+
+::: panel-tabset
+## dplyr
+
+```{r}
+dplyr::left_join(A, B, by = "id")
+```
+
+## Base R
+
+```{r}
+merge.data.frame(A, B, by = "id", all.x =TRUE)
+```
+
+## SQL
+
+```{r warning=FALSE}
+sqldf::sqldf(
+  "SELECT 
+    A.id, A.a_var, B.b_var
+  FROM A
+  LEFT JOIN B 
+    ON A.id=B.id
+")
+```
+:::
+
+## Avoiding the issue
+
+Updating by value avoids this issue. Of course, you'd need to assign this to a variable.
+
+You can use the `merge` syntax:
+
+```{r eval = FALSE}
+merge.data.table(A, B, by = "id", all.x = TRUE)
+```
+
+Or, you can use the `X[Y]` shorthand without assigning new variables by reference with `:=`. Confusingly, when using the `X[Y]` shorthand syntax, you have to reverse the direction of the *join*.
+
+```{r}
+B[A, on = "id"] # Instead of A[B]
+```
+
+## Should I Ever Use the Other Join?
+
+Yes! These "update by reference joins" are *really* efficient if you know the single match behavior and account for it.
+
+Normally, R copies the new dataframe in memory after a join. For large datasets, this can be memory intensive and time consuming. You can track this behavior with Hadley Wickham's `lobstr` [package](https://lobstr.r-lib.org/ "Lobstr package website").
+
+```{r}
+# See where data.tables are stored in memory
+lobstr::obj_addrs(list(A, B))
+
+joined_df = merge.data.table(A, B, by = "id")
+lobstr::obj_addr(joined_df) # New location in memory
+```
+
+When you update-join, the dataframes keep their place in memory. New columns are appended without modifying the objects location in memory.
+
+```{r}
+lobstr::obj_addr(A)
+
+A[B, on = "id", foo := 123 * i.b_var]
+lobstr::obj_addr(A) # same location in memory
+```
