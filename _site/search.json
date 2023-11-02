@@ -1,12 +1,5 @@
 [
   {
-    "objectID": "index.html",
-    "href": "index.html",
-    "title": "Eli Kravitz, PhD",
-    "section": "",
-    "text": "Hello!\nI am a statistician and data scientist. I use statistics and machine learning to help federal agencies answer open-ended research questions. This includes sorting through large, messy datasets, benchmarking models, and building data processing pipelines. Before this, I designed clinical trials for the life sciences industry.\nMost of my work involves extensive programming in R and Python. I am a long-time R user who keeps up with latest developments in the language. You can see some of my thoughts on R and Python in the Posts section of this website. I occasionally answer statistics and programming questions on Stack Exchange.\nIn my free time I play music, cook and try (often unsuccessfully) to manage my border collie. You can see me doing the latter two here."
-  },
-  {
     "objectID": "blog.html",
     "href": "blog.html",
     "title": "Posts",
@@ -14,102 +7,25 @@
     "text": "Data.table’s (Not Quite) Left Joins\n\n\n\n\n\n\n\nR\n\n\ndata.table\n\n\n\n\n\n\n\n\n\n\n\n\nAug 19, 2023\n\n\nEli Kravitz\n\n\n\n\n\n\n  \n\n\n\n\nLLM Aided Webscraping\n\n\nRetreival Augment Generation\n\n\n\n\n\n\n\n\n\nAug 4, 2023\n\n\nEli Kravitz\n\n\n\n\n\n\n  \n\n\n\n\nYemen Analysis Featured by World Bank\n\n\n\n\n\n\n\nnews\n\n\nanalysis\n\n\n\n\n\n\n\n\n\n\n\nJul 15, 2023\n\n\nEli Kravitz\n\n\n\n\n\n\n  \n\n\n\n\nReading Large Delimited Data in Chunks With Readr\n\n\n\n\n\n\n\nR\n\n\ntidyverse\n\n\nCSV\n\n\n\n\n\n\n\n\n\n\n\nApr 1, 2022\n\n\nEli Kravitz\n\n\n\n\n\n\n  \n\n\n\n\nCollaborating With Local Git Repositories\n\n\nLow Tech Data Science\n\n\n\n\nGit\n\n\nlow-tech\n\n\n\n\n\n\n\n\n\n\n\nFeb 23, 2022\n\n\nEli S. Kravitz\n\n\n\n\n\n\nNo matching items"
   },
   {
-    "objectID": "posts/post-with-code/index.html",
-    "href": "posts/post-with-code/index.html",
-    "title": "Post With Code",
+    "objectID": "presentations/hei/index.html",
+    "href": "presentations/hei/index.html",
+    "title": "Reevaluating Composite Scores with Flexible Regression and Variable Selection",
     "section": "",
-    "text": "This is a post with executable code.\n\n1 + 1\n\n[1] 2"
+    "text": "I planned to give this presentation (or a variation of it) at International Conference on Diet and Activity Methods (ICDAM) in the spring of 2020. Certain global events prevented me from traveling in 2020, so I never had a chance to give this presentation.\nThe Healthy Eating Index (HEI) is a set of guidelines for what types of foods Americans should consume. A perfect diet receives a score of 100 and a poor diet receives a score of 0.\nThis presentation shows how you can use a Lasso penalty to adjust the relative importance of different good groups. The Lasso penalty allows the relative importance to go to 0, suggesting that food group should not be consumed.\nLink to presentation"
   },
   {
-    "objectID": "posts/welcome/index.html",
-    "href": "posts/welcome/index.html",
-    "title": "Welcome To My Blog",
+    "objectID": "presentations/graphical_testing/index.html",
+    "href": "presentations/graphical_testing/index.html",
+    "title": "Graphical Hypothesis Testing",
     "section": "",
-    "text": "This is the first post in a Quarto blog. Welcome!\n\nSince this post doesn’t specify an explicit image, the first image in the post will be used in the listing page of posts."
+    "text": "This presentation began as a proposed design for a Phase 2 trial. After Phase 1 results, development was stopped and this trial was never considered. I reworked the presentation into a tutorial/workshop for using graphical testing in a multi-arm trial. This was my first experiment with plotly and Rmarkdown slides, so excuse any strange formatting.\nLink to presentation"
   },
   {
-    "objectID": "posts/yemen/index.html",
-    "href": "posts/yemen/index.html",
-    "title": "Yemen Analysis Featured by World Bank",
+    "objectID": "presentations/aapor/index.html",
+    "href": "presentations/aapor/index.html",
+    "title": "Dynamic Predictions for the Current Population Survey",
     "section": "",
-    "text": "We were asked to analyze the economic and environmental impact of the Yemeni Civil War. I was responsible for analyzing changes in commodity prices during this period of time. In around 2016 the Yemeni economy began to diverge in areas controlled by Yemen’s internationally recognized government (IRG) and areas of de facto authority (DFA). IRG controlled areas faced high inflation, while prices remained relatively stable in DFA control areas.\nOur work was feature on the World Bank’s Blog. A full report is available through the World Bank: Yemen Country Economic Memorandum: Glimmers of Hope in Dark Times. Most of my work is in Section 2, around page 21."
-  },
-  {
-    "objectID": "presentations.html",
-    "href": "presentations.html",
-    "title": "Presentations",
-    "section": "",
-    "text": "Dynamic Predictions for the Current Population Survey\n\n\n\n\n\n\n\n\n\n\n\n\nJun 11, 2023\n\n\nEli Kravitz\n\n\n\n\n\n\n  \n\n\n\n\nGraphical Hypothesis Testing\n\n\n\n\n\n\n\n\n\n\n\n\nFeb 1, 2021\n\n\nEli Kravitz\n\n\n\n\n\n\n  \n\n\n\n\nAdjustments for Patient Crossover in Clinical Trials\n\n\n\n\n\n\n\n\n\n\n\n\nFeb 1, 2021\n\n\nEli Kravitz\n\n\n\n\n\n\n  \n\n\n\n\nReevaluating Composite Scores with Flexible Regression and Variable Selection\n\n\n\n\n\n\n\n\n\n\n\n\nMar 1, 2020\n\n\nEli Kravitz\n\n\n\n\n\n\n  \n\n\n\n\nEstablishing Physical Activity Guidelines\n\n\nAn Application of Shape Constrained Regression\n\n\n\n\n\n\n\n\n\nJul 1, 2018\n\n\nEli Kravitz\n\n\n\n\n\n\nNo matching items"
-  },
-  {
-    "objectID": "posts/data_table_joins/index.html",
-    "href": "posts/data_table_joins/index.html",
-    "title": "Data.table’s (Not Quite) Left Joins",
-    "section": "",
-    "text": "Like many other R users, I’ve integrated data.table (CRAN, Github) into my R workflow. data.table is lightning-fast, with common table operations running faster than most R, Python, or standalone alternative. Many people prefer data.table’s concise syntax to tidyverse / dplyr style of pipes and verbs. (I am not one of those people. I mostly use the tidytablepackage which implements tidyversesyntax for data.tables).\nFor as much as I appreciate data.table, it often lacks proper documentation. In particular, the package has no documentation on joins. That leaves the users to learn data.table joins by trial-and-error or through second hand resources and Stack Overflow answers. This fragmented documentation can mask some eccentricities of data.table."
-  },
-  {
-    "objectID": "posts/data_table_joins/index.html#introduction",
-    "href": "posts/data_table_joins/index.html#introduction",
-    "title": "Data.table’s (Not Quite) Left Joins",
-    "section": "",
-    "text": "Like many other R users, I’ve integrated data.table (CRAN, Github) into my R workflow. data.table is lightning-fast, with common table operations running faster than most R, Python, or standalone alternative. Many people prefer data.table’s concise syntax to tidyverse / dplyr style of pipes and verbs. (I am not one of those people. I mostly use the tidytablepackage which implements tidyversesyntax for data.tables).\nFor as much as I appreciate data.table, it often lacks proper documentation. In particular, the package has no documentation on joins. That leaves the users to learn data.table joins by trial-and-error or through second hand resources and Stack Overflow answers. This fragmented documentation can mask some eccentricities of data.table."
-  },
-  {
-    "objectID": "posts/data_table_joins/index.html#the-left-join-that-wasnt",
-    "href": "posts/data_table_joins/index.html#the-left-join-that-wasnt",
-    "title": "Data.table’s (Not Quite) Left Joins",
-    "section": "The Left Join That Wasn’t",
-    "text": "The Left Join That Wasn’t\nAs of mid 2023 , the first Google search result for “data.table left join” is this Stack Overflow answer and this Stack Overflow answer. Unfortunately, this code does not produce a left join, at least in the traditional SQL sense. Props to Stack Overflow user Helen for pointing this issue. To be fair, this misconception is widespread, so it must be coming from many places.\n\nThe Problem\nThe common advice you’ll get for joining data.tables is to use := operator to update the left table by reference (“in place”) with the new column(s) from the right table. Pseudo-code would look something like this:\n\nLEFT_TABLE[RIGHT_TABLE, on=\"id\", col_from_left := i.col_from_right]\n\nThe problem is data.table does not return multiple matches when you modify by reference. It returns only the last match, instead of returning all matches. See below:\n\nlibrary(data.table)\nA = data.table(id = c(\"x\", \"y\", \"z\"), \n               a_var = c(100, 200, 300))\nB = data.table(id = rep(c(\"w\", \"x\", \"y\", \"z\"), each = 2), \n               b_var = seq(1, 8, by = 1))\n\n# \"Left join\". New values added by reference \nA[B, on = \"id\", new_var := i.b_var]\n\nprint(A)\n\n   id a_var new_var\n1:  x   100       4\n2:  y   200       6\n3:  z   300       8\n\n\nThis returns the wrong number of rows. We should get 6 rows total: each row of A should match two rows in B.\nCompare this with other implementations of left join, and you’ll see the expected behavior.\n\ndplyrBase RSQL\n\n\n\ndplyr::left_join(A, B, by = \"id\")\n\n   id a_var new_var b_var\n1:  x   100       4     3\n2:  x   100       4     4\n3:  y   200       6     5\n4:  y   200       6     6\n5:  z   300       8     7\n6:  z   300       8     8\n\n\n\n\n\nmerge.data.frame(A, B, by = \"id\", all.x =TRUE)\n\n  id a_var new_var b_var\n1  x   100       4     3\n2  x   100       4     4\n3  y   200       6     5\n4  y   200       6     6\n5  z   300       8     7\n6  z   300       8     8\n\n\n\n\n\nsqldf::sqldf(\n  \"SELECT \n    A.id, A.a_var, B.b_var\n  FROM A\n  LEFT JOIN B \n    ON A.id=B.id\n\")\n\ntcltk DLL is linked to '/opt/X11/lib/libX11.6.dylib'\n\n\n  id a_var b_var\n1  x   100     3\n2  x   100     4\n3  y   200     5\n4  y   200     6\n5  z   300     7\n6  z   300     8"
-  },
-  {
-    "objectID": "posts/data_table_joins/index.html#avoiding-the-issue",
-    "href": "posts/data_table_joins/index.html#avoiding-the-issue",
-    "title": "Data.table’s (Not Quite) Left Joins",
-    "section": "Avoiding the issue",
-    "text": "Avoiding the issue\nUpdating by value avoids this issue. Of course, you’d need to assign this to a variable.\nYou can use the merge syntax:\n\nmerge.data.table(A, B, by = \"id\", all.x = TRUE)\n\nOr, you can use the X[Y] shorthand without assigning new variables by reference with :=. Confusingly, when using the X[Y] shorthand syntax, you have to reverse the direction of the join.\n\nB[A, on = \"id\"] # Instead of A[B]\n\n   id b_var a_var new_var\n1:  x     3   100       4\n2:  x     4   100       4\n3:  y     5   200       6\n4:  y     6   200       6\n5:  z     7   300       8\n6:  z     8   300       8"
-  },
-  {
-    "objectID": "posts/data_table_joins/index.html#should-i-ever-use-the-other-join",
-    "href": "posts/data_table_joins/index.html#should-i-ever-use-the-other-join",
-    "title": "Data.table’s (Not Quite) Left Joins",
-    "section": "Should I Ever Use the Other Join?",
-    "text": "Should I Ever Use the Other Join?\nYes! These “update by reference joins” are really efficient if you know the single match behavior and account for it.\nNormally, R copies the new dataframe in memory after a join. For large datasets, this can be memory intensive and time consuming. You can track this behavior with Hadley Wickham’s lobstr package.\n\n# See where data.tables are stored in memory\nlobstr::obj_addrs(list(A, B))\n\n[1] \"0x7f840dc57a00\" \"0x7f8409d3b200\"\n\njoined_df = merge.data.table(A, B, by = \"id\")\nlobstr::obj_addr(joined_df) # New location in memory\n\n[1] \"0x7f840e910600\"\n\n\nWhen you update-join, the dataframes keep their place in memory. New columns are appended without modifying the objects location in memory.\n\nlobstr::obj_addr(A)\n\n[1] \"0x7f840dc57a00\"\n\nA[B, on = \"id\", foo := 123 * i.b_var]\nlobstr::obj_addr(A) # same location in memory\n\n[1] \"0x7f840dc57a00\""
-  },
-  {
-    "objectID": "posts/csv_chunks/index.html",
-    "href": "posts/csv_chunks/index.html",
-    "title": "Reading Large Delimited Data in Chunks With Readr",
-    "section": "",
-    "text": "I recently had to work with several large CSV files, ranging in size from 8Gb to 12Gb. I needed to dplyr::group_by() a categorical variable and count the number of unique records with dplyr::n_distinct(). I ran out of RAM whenever I loaded the entire data set into R with readr::read_csv() or data.table::fread(). I tried to load the data in chunks (see more below), but found the existing documentation to be confusing. I’ve provided a system that works for me in the blog post."
-  },
-  {
-    "objectID": "posts/csv_chunks/index.html#use-case",
-    "href": "posts/csv_chunks/index.html#use-case",
-    "title": "Reading Large Delimited Data in Chunks With Readr",
-    "section": "",
-    "text": "I recently had to work with several large CSV files, ranging in size from 8Gb to 12Gb. I needed to dplyr::group_by() a categorical variable and count the number of unique records with dplyr::n_distinct(). I ran out of RAM whenever I loaded the entire data set into R with readr::read_csv() or data.table::fread(). I tried to load the data in chunks (see more below), but found the existing documentation to be confusing. I’ve provided a system that works for me in the blog post."
-  },
-  {
-    "objectID": "posts/csv_chunks/index.html#what-is-chunking",
-    "href": "posts/csv_chunks/index.html#what-is-chunking",
-    "title": "Reading Large Delimited Data in Chunks With Readr",
-    "section": "What is chunking?",
-    "text": "What is chunking?\nSometimes you have a dataset that’s too large to fit in memory. One way to get around this is to divide your data into subsets (“chunks”) that do fit into memory and process each chunk separately. You can aggregate the processed chunks together after you’ve reduced the size. This is basically a low-tech implementation of the MapReduce framework used Apache Hadoop"
-  },
-  {
-    "objectID": "posts/csv_chunks/index.html#chunks-in-readr",
-    "href": "posts/csv_chunks/index.html#chunks-in-readr",
-    "title": "Reading Large Delimited Data in Chunks With Readr",
-    "section": "Chunks in readr",
-    "text": "Chunks in readr\nYou can read deliminated data in chunks by using any of the read_*_chunked() functions from the readr package. I’ll focus on read_csv_chunked() with a CSV version of mtcars.\nThe function requires at least two arguments:read_csv_chunked(file, callback). file is the file path of of your.csv file. The calllback argument is a little more complicated. The documentation for thisis sparse and aimed at power-users.\nCallbacks tell R what action to take when it’s done reading a chunk. There are three classes of of callbacks that you’re likely to use. Each callback applies a function f() to the chunk before returning a value.\n\nDataFrameCallback - Apply f to each chunk then combine results of f(chunk) by appending rows into a tibble\n\nExample: Read each chunk -&gt; Remove records that don’t meet condition –&gt; append rows\n\nSideEffectChunkCallback - Apply f to reach chunk and return nothing\n\nExample: Reach each chunk –&gt; write each chunk to a .parquet file\n\nAccumulateCallBack - Accumulates a single result across chunks\n\nExample: Count the number of distinct IDs in each chunk –&gt; add them together\n\n\nTo use a callback in read_csv_chunked you declare the function to apply to each chunk then make a new ChunkCallback class. The function must have the arguments data and pos. The data argument holds the current data.frame chunk and pos (short for position) holds the line number that the current chunk begins on. You must include pos in your function arguments even if function does not use it. If you use AccumulateCallBack you must include a third argument, acc, which stores the current value of their accumulator.\nWe’ll use a simple example to show how read a .csv file in chunks with a custom callback function. We load mtcars in chunks and keep cars with manual transmission (am == 0) and miles/gallon over over 20 (mpg &gt;= 20).\n\nlibrary(readr)\nlibrary(dplyr)\ndata(mtcars); write_csv(mtcars, \"mtcars.csv\")\n\n# Function to pass to DataFrameCallback$new()\nf = function(data, pos) {  # pos must be an  argument even though unused\n  data %&gt;% \n    filter(am == 0L, mpg &gt;= 20)\n}\n\nchunked_df = read_csv_chunked(\n  file = \"mtcars.csv\",\n  callback = DataFrameCallback$new(f),\n  chunk_size = 5L\n)\n\nchunked_df\n\n# A tibble: 4 × 11\n    mpg   cyl  disp    hp  drat    wt  qsec    vs    am  gear  carb\n  &lt;dbl&gt; &lt;dbl&gt; &lt;dbl&gt; &lt;dbl&gt; &lt;dbl&gt; &lt;dbl&gt; &lt;dbl&gt; &lt;dbl&gt; &lt;dbl&gt; &lt;dbl&gt; &lt;dbl&gt;\n1  21.4     6  258    110  3.08  3.22  19.4     1     0     3     1\n2  24.4     4  147.    62  3.69  3.19  20       1     0     4     2\n3  22.8     4  141.    95  3.92  3.15  22.9     1     0     4     2\n4  21.5     4  120.    97  3.7   2.46  20.0     1     0     3     1"
-  },
-  {
-    "objectID": "posts/csv_chunks/index.html#why-didnt-you-use-xyz",
-    "href": "posts/csv_chunks/index.html#why-didnt-you-use-xyz",
-    "title": "Reading Large Delimited Data in Chunks With Readr",
-    "section": "Why didn’t you use XYZ?",
-    "text": "Why didn’t you use XYZ?\nWhy didn’t you use XYZ?\nYou can use distributed data processing like Spark or Dask. I didn’t have access to either.\nThere are options for reading chunked data inside and outside of R.\n\nPython’s pandas.read_csv(..., chunksize) returns an iterator to read a read a CSV in chunks. This is a good option if you’re okay leaving the R and tidyverse ecosystem.\nfread(...,) from data.table can read files in chunks using the skip and nrows arguments. However, the user has to manually program this functionality. Things get complicated if you want to keep column names or apply a function to each chunk.\nR’s LaF package offers fast, random access to ASCII files without loading the file into memory. read_chunkwise() from the chunked package is a wrapper that provides dplyr like synatx to Laf. I couldn’t get either package to work, and I couldn’t diagnose the problem from the error messages."
+    "text": "In May of 2023, I gave a presentation at the American Association for Public Opinion Research (AAPOR) conference. This presentation was given to an audience of, mostly, social scientists, so I omitted some of the technical details.\nOur goal is to predict who will respond to the Current Population Survey (CPS). Survey interviews happen over 10 days. To account for time varying effects, we stratifiy our data by interview day and fit an XGBoost model for each day.\nLink to presentation"
   },
   {
     "objectID": "posts/local_git/index.html",
@@ -154,39 +70,46 @@
     "text": "Typical Workflow\nAfter the initial setup, the workflow is the same as using Github. You can commit, push, pull, revert changes, and make new branches from RStudio or the console. Instructions for using Git in Rstudio are available in Section 4.9 of Introduction to Computational and Data Science. Example console input is provided below:\n\ngit pull # If you need to update you branch from remote\n\ngit add * # Add your files \ngit commit -am \"My commit message\" \ngit push \n\nThe workflow is the same as if you were using Git with Github:\n\nPull from the remote repository to sync changes to your local repository\nStage files to indicate what you want Git to track\nCommit your local changes to take a “snapshot” of the work you staged in the previous step\nPush your changes to remote to include your local changes in the “global” repository"
   },
   {
-    "objectID": "presentations/aapor/index.html",
-    "href": "presentations/aapor/index.html",
-    "title": "Dynamic Predictions for the Current Population Survey",
+    "objectID": "posts/data_table_joins/index.html",
+    "href": "posts/data_table_joins/index.html",
+    "title": "Data.table’s (Not Quite) Left Joins",
     "section": "",
-    "text": "In May of 2023, I gave a presentation at the American Association for Public Opinion Research (AAPOR) conference. This presentation was given to an audience of, mostly, social scientists, so I omitted some of the technical details.\nOur goal is to predict who will respond to the Current Population Survey (CPS). Survey interviews happen over 10 days. To account for time varying effects, we stratifiy our data by interview day and fit an XGBoost model for each day.\nLink to presentation"
+    "text": "Like many other R users, I’ve integrated data.table (CRAN, Github) into my R workflow. data.table is lightning-fast, with common table operations running faster than most R, Python, or standalone alternative. Many people prefer data.table’s concise syntax to tidyverse / dplyr style of pipes and verbs. (I am not one of those people. I mostly use the tidytablepackage which implements tidyversesyntax for data.tables).\nFor as much as I appreciate data.table, it often lacks proper documentation. In particular, the package has no documentation on joins. That leaves the users to learn data.table joins by trial-and-error or through second hand resources and Stack Overflow answers. This fragmented documentation can mask some eccentricities of data.table."
   },
   {
-    "objectID": "presentations/os_crossover/index.html",
-    "href": "presentations/os_crossover/index.html",
-    "title": "Adjustments for Patient Crossover in Clinical Trials",
+    "objectID": "posts/data_table_joins/index.html#introduction",
+    "href": "posts/data_table_joins/index.html#introduction",
+    "title": "Data.table’s (Not Quite) Left Joins",
     "section": "",
-    "text": "This presentation was part of an information session and workshop for Oncology statisticians. I review methods to adjust estimates of treatment effect when clinical trial patients can crossover from the standard-of-care arm to the treatment arm. I provide references so readers can review topic relevant to them at a later time.\nLink to presentation"
+    "text": "Like many other R users, I’ve integrated data.table (CRAN, Github) into my R workflow. data.table is lightning-fast, with common table operations running faster than most R, Python, or standalone alternative. Many people prefer data.table’s concise syntax to tidyverse / dplyr style of pipes and verbs. (I am not one of those people. I mostly use the tidytablepackage which implements tidyversesyntax for data.tables).\nFor as much as I appreciate data.table, it often lacks proper documentation. In particular, the package has no documentation on joins. That leaves the users to learn data.table joins by trial-and-error or through second hand resources and Stack Overflow answers. This fragmented documentation can mask some eccentricities of data.table."
   },
   {
-    "objectID": "presentations/graphical_testing/index.html",
-    "href": "presentations/graphical_testing/index.html",
-    "title": "Graphical Hypothesis Testing",
-    "section": "",
-    "text": "This presentation began as a proposed design for a Phase 2 trial. After Phase 1 results, development was stopped and this trial was never considered. I reworked the presentation into a tutorial/workshop for using graphical testing in a multi-arm trial. This was my first experiment with plotly and Rmarkdown slides, so excuse any strange formatting.\nLink to presentation"
+    "objectID": "posts/data_table_joins/index.html#the-left-join-that-wasnt",
+    "href": "posts/data_table_joins/index.html#the-left-join-that-wasnt",
+    "title": "Data.table’s (Not Quite) Left Joins",
+    "section": "The Left Join That Wasn’t",
+    "text": "The Left Join That Wasn’t\nAs of mid 2023 , the first Google search result for “data.table left join” is this Stack Overflow answer and this Stack Overflow answer. Unfortunately, this code does not produce a left join, at least in the traditional SQL sense. Props to Stack Overflow user Helen for pointing this issue. To be fair, this misconception is widespread, so it must be coming from many places.\n\nThe Problem\nThe common advice you’ll get for joining data.tables is to use := operator to update the left table by reference (“in place”) with the new column(s) from the right table. Pseudo-code would look something like this:\n\nLEFT_TABLE[RIGHT_TABLE, on=\"id\", col_from_left := i.col_from_right]\n\nThe problem is data.table does not return multiple matches when you modify by reference. It returns only the last match, instead of returning all matches. See below:\n\nlibrary(data.table)\nA = data.table(id = c(\"x\", \"y\", \"z\"), \n               a_var = c(100, 200, 300))\nB = data.table(id = rep(c(\"w\", \"x\", \"y\", \"z\"), each = 2), \n               b_var = seq(1, 8, by = 1))\n\n# \"Left join\". New values added by reference \nA[B, on = \"id\", new_var := i.b_var]\n\nprint(A)\n\n   id a_var new_var\n1:  x   100       4\n2:  y   200       6\n3:  z   300       8\n\n\nThis returns the wrong number of rows. We should get 6 rows total: each row of A should match two rows in B.\nCompare this with other implementations of left join, and you’ll see the expected behavior.\n\ndplyrBase RSQL\n\n\n\ndplyr::left_join(A, B, by = \"id\")\n\n   id a_var new_var b_var\n1:  x   100       4     3\n2:  x   100       4     4\n3:  y   200       6     5\n4:  y   200       6     6\n5:  z   300       8     7\n6:  z   300       8     8\n\n\n\n\n\nmerge.data.frame(A, B, by = \"id\", all.x =TRUE)\n\n  id a_var new_var b_var\n1  x   100       4     3\n2  x   100       4     4\n3  y   200       6     5\n4  y   200       6     6\n5  z   300       8     7\n6  z   300       8     8\n\n\n\n\n\nsqldf::sqldf(\n  \"SELECT \n    A.id, A.a_var, B.b_var\n  FROM A\n  LEFT JOIN B \n    ON A.id=B.id\n\")\n\ntcltk DLL is linked to '/opt/X11/lib/libX11.6.dylib'\n\n\n  id a_var b_var\n1  x   100     3\n2  x   100     4\n3  y   200     5\n4  y   200     6\n5  z   300     7\n6  z   300     8"
   },
   {
-    "objectID": "presentations/pa_presentation/index.html",
-    "href": "presentations/pa_presentation/index.html",
-    "title": "Establishing Physical Activity Guidelines",
-    "section": "",
-    "text": "This is an old presentation. When I was getting ready to finish my PhD, this is what I presented whenever I was asked to give a talk during an interview.\nWe developed physical activity guidelines by fitting shaped constrained regression models to self-reported physical activity questionnaires. We scaled the model’s fitted values so they were between 0 and 100, with 0 indicate extremely poor levels of physical activity and 100 representation perfect levels of physical activity.\nLink to the presentation"
+    "objectID": "posts/data_table_joins/index.html#avoiding-the-issue",
+    "href": "posts/data_table_joins/index.html#avoiding-the-issue",
+    "title": "Data.table’s (Not Quite) Left Joins",
+    "section": "Avoiding the issue",
+    "text": "Avoiding the issue\nUpdating by value avoids this issue. Of course, you’d need to assign this to a variable.\nYou can use the merge syntax:\n\nmerge.data.table(A, B, by = \"id\", all.x = TRUE)\n\nOr, you can use the X[Y] shorthand without assigning new variables by reference with :=. Confusingly, when using the X[Y] shorthand syntax, you have to reverse the direction of the join.\n\nB[A, on = \"id\"] # Instead of A[B]\n\n   id b_var a_var new_var\n1:  x     3   100       4\n2:  x     4   100       4\n3:  y     5   200       6\n4:  y     6   200       6\n5:  z     7   300       8\n6:  z     8   300       8"
   },
   {
-    "objectID": "presentations/hei/index.html",
-    "href": "presentations/hei/index.html",
-    "title": "Reevaluating Composite Scores with Flexible Regression and Variable Selection",
+    "objectID": "posts/data_table_joins/index.html#should-i-ever-use-the-other-join",
+    "href": "posts/data_table_joins/index.html#should-i-ever-use-the-other-join",
+    "title": "Data.table’s (Not Quite) Left Joins",
+    "section": "Should I Ever Use the Other Join?",
+    "text": "Should I Ever Use the Other Join?\nYes! These “update by reference joins” are really efficient if you know the single match behavior and account for it.\nNormally, R copies the new dataframe in memory after a join. For large datasets, this can be memory intensive and time consuming. You can track this behavior with Hadley Wickham’s lobstr package.\n\n# See where data.tables are stored in memory\nlobstr::obj_addrs(list(A, B))\n\n[1] \"0x7f840dc57a00\" \"0x7f8409d3b200\"\n\njoined_df = merge.data.table(A, B, by = \"id\")\nlobstr::obj_addr(joined_df) # New location in memory\n\n[1] \"0x7f840e910600\"\n\n\nWhen you update-join, the dataframes keep their place in memory. New columns are appended without modifying the objects location in memory.\n\nlobstr::obj_addr(A)\n\n[1] \"0x7f840dc57a00\"\n\nA[B, on = \"id\", foo := 123 * i.b_var]\nlobstr::obj_addr(A) # same location in memory\n\n[1] \"0x7f840dc57a00\""
+  },
+  {
+    "objectID": "posts/yemen/index.html",
+    "href": "posts/yemen/index.html",
+    "title": "Yemen Analysis Featured by World Bank",
     "section": "",
-    "text": "I planned to give this presentation (or a variation of it) at International Conference on Diet and Activity Methods (ICDAM) in the spring of 2020. Certain global events prevented me from traveling in 2020, so I never had a chance to give this presentation.\nThe Healthy Eating Index (HEI) is a set of guidelines for what types of foods Americans should consume. A perfect diet receives a score of 100 and a poor diet receives a score of 0.\nThis presentation shows how you can use a Lasso penalty to adjust the relative importance of different good groups. The Lasso penalty allows the relative importance to go to 0, suggesting that food group should not be consumed.\nLink to presentation"
+    "text": "We were asked to analyze the economic and environmental impact of the Yemeni Civil War. I was responsible for analyzing changes in commodity prices during this period of time. In around 2016 the Yemeni economy began to diverge in areas controlled by Yemen’s internationally recognized government (IRG) and areas of de facto authority (DFA). IRG controlled areas faced high inflation, while prices remained relatively stable in DFA control areas.\nOur work was feature on the World Bank’s Blog. A full report is available through the World Bank: Yemen Country Economic Memorandum: Glimmers of Hope in Dark Times. Most of my work is in Section 2, around page 21."
   },
   {
     "objectID": "posts/web_scraper/index.html",
@@ -210,11 +133,11 @@
     "text": "The Pivot to AI\nFinding a list of all SBDCs was straightforward; they can be scraped from the Find Your SBDC tool provided by America’s SBDC. We found over 700 SBDCs using this tool, each with their own unique website. Manually going through each page is not feasible. Our original plan to extract relevant information with XPath or CSS selectors was not possible. SBDC websites are not standardized. Building selectors that generally work over such a wide variety of websites is impossible.\nFor each of the 700+ SBDC websites we use Python’s Beautiful Soup library to retrieve the text from every subpage of the SBDC’s website. Ideally, we would provide all this text to ChatGPT API as context in a prompt then ask ChatGPT to retrieve the staff and services for us. GPT-4 has a 8194 token limit (≈3000 words) which includes the response from GPT-4. We limit our context to 3000 tokens to leave tokens remaining for our prompt and answer.\nThis approach is adapted from webcrawler notebook from the OpenAI Cookbook."
   },
   {
-    "objectID": "posts/web_scraper/index.html#retrieval-augmented-generation",
-    "href": "posts/web_scraper/index.html#retrieval-augmented-generation",
+    "objectID": "posts/web_scraper/index.html#webscraping",
+    "href": "posts/web_scraper/index.html#webscraping",
     "title": "LLM Aided Webscraping",
-    "section": "Retrieval-Augmented Generation",
-    "text": "Retrieval-Augmented Generation\nWe take the following steps to implement retrieval-augmented generation. Each step is explained in detail in later sections of this document.\nAs an example, I’m showing text scraped from the SBDC website for Tyler, TX and every sub-page linked from the main URL. Results are stored in a Pandas DataFrame.\n\nimport pandas as pd\nimport numpy as np\n\ndf = pd.read_csv(\"processed/scraped.csv\", index_col=None, header=0)\n\n\n\n\n\n  \n\n\n\nYou can see text scraped from one page in more detailed below.\n\n\nCode\n# example_text = \"Business Advice | Tyler Small Business Development Center Follow Us x a ! 903-510-2975 Directions Business Advising The SBDC offers free one-on-one advising for start-up and existing businesses in the retail, wholesale, manufacturing, and service industries. Our Advisors can help you. Prepare financial projections for loan package. Conduct financial analysis and improve profitability Develop competitive strategies  Cope with government regulation and taxes Design a marketing plan Understand and secure loans and other sources of capital Keep abreast of current technology Brainstorming and research Restructure debt analysis Prepackage Interview Process for SBA Loans Turnaround Advising Follow these steps to meet with a business advisor Step 1 Fill out/ download the following forms. Start-up Business Assessment Existing Business Assessment Fill out the Form 641/Client Agreement Step 2: You will be contacted by our office to direct you to the appropriate resource.  How to Start a Business and Market lt on Social Media Tyler SBDC offers a low-cost monthly class for individuals interested in starting a small business. This single-session class provides an excellent opportunity for individuals to determine if small business ownership is right for them. This class also covers current social media trends and how to use platforms such as Instagram, Facebook, YouTube, and more to market their new business. This class is held on Tuesdays as follows: Tuesday 6/6 6-8 pm Tuesday 7/11 6-8 pm Tuesday 8/1 6-8 pm Location: RTDC 112 Registration Fee: $25 Call TJC School of Continuing Studies at 903-510-2900 to register and pay Contact Us\"\n\n\n\nEmbedding\n\nEstimating Cost and Resources\nFirst, we estimate how much of our 8194 token limit will be used by this text using the tiktoken library (Github). tiktoken is a open-source byte pair encoding (BPE) tokenizer. You can use this approximate how many tokens you’ll send to the Chat-GPT API. The example text uses about 329 tokens.\n\nimport tiktoken \ntokenizer = tiktoken.get_encoding(\"cl100k_base\")\n\ndf['n_tokens'] = df['text'].apply(lambda x: len(tokenizer.encode(x)))\n\n\n\n\n\n  \n\n\n\n\n\n\nEmbedding Text\nNote: You’ll need to make an access key for OpenAI to run any of the code in this section\nThen we create embeddings for each page using the OpenAI API. Embeddings translate text into numeric vectors. When two vector embeddings are close to each other (low distance), we expect the text to be similar in meaning. OpenAI offers a number of embedding models for users to choose from. At the time of writing this, text-embedding-ada-002 is is the cheapest option and outperforms the other models.\nBelow is example code (not run), to show how to use OpenAI embedding models. (I didn’t want to pay for any more uses of the OpenAI API or host a reproducible example on this site. )\n\nimport tiktoken \nfrom openai import Embedding\n\ndf[\"embeddings\"] = df[\"text\"].apply(lambda x: Embedding.create(input=x,model=\"text-embedding-ada-002\",temperature=0.25)[\"data\"][0][\"embedding\"])"
+    "section": "Webscraping",
+    "text": "Webscraping\nAs an example, I’m showing text scraped from the SBDC website for Tyler, TX and every sub-page of the main URL. Results are stored in a pandas.DataFrame.\n\nimport pandas as pd\nimport numpy as np\n\ndf = pd.read_csv(\"processed/scraped.csv\", index_col=None, header=0)\n\n\n\n\n\n  \n\n\n\nYou can see text scraped from one page in more detail by expanding the code chunk below:\n\n\nCode\n# example_text = \"Business Advice | Tyler Small Business Development Center Follow Us x a ! 903-510-2975 Directions Business Advising The SBDC offers free one-on-one advising for start-up and existing businesses in the retail, wholesale, manufacturing, and service industries. Our Advisors can help you. Prepare financial projections for loan package. Conduct financial analysis and improve profitability Develop competitive strategies  Cope with government regulation and taxes Design a marketing plan Understand and secure loans and other sources of capital Keep abreast of current technology Brainstorming and research Restructure debt analysis Prepackage Interview Process for SBA Loans Turnaround Advising Follow these steps to meet with a business advisor Step 1 Fill out/ download the following forms. Start-up Business Assessment Existing Business Assessment Fill out the Form 641/Client Agreement Step 2: You will be contacted by our office to direct you to the appropriate resource.  How to Start a Business and Market lt on Social Media Tyler SBDC offers a low-cost monthly class for individuals interested in starting a small business. This single-session class provides an excellent opportunity for individuals to determine if small business ownership is right for them. This class also covers current social media trends and how to use platforms such as Instagram, Facebook, YouTube, and more to market their new business. This class is held on Tuesdays as follows: Tuesday 6/6 6-8 pm Tuesday 7/11 6-8 pm Tuesday 8/1 6-8 pm Location: RTDC 112 Registration Fee: $25 Call TJC School of Continuing Studies at 903-510-2900 to register and pay Contact Us\"\n\n\n\nEmbedding\n\nEstimating Cost and Resources\nFirst, we estimate how much of our 8194 token limit will be used by this text using the tiktoken library (Github). tiktoken is a open-source byte pair encoding (BPE) tokenizer. You can use this approximate how many tokens you’ll send to the Chat-GPT API. The example text uses about 329 tokens.\n\nimport tiktoken \ntokenizer = tiktoken.get_encoding(\"cl100k_base\")\n\ndf['n_tokens'] = df['text'].apply(lambda x: len(tokenizer.encode(x)))\n\n\n\n\n\n  \n\n\n\n\n\n\nEmbedding Text\nNote: You’ll need to make an access key for OpenAI to run any of the code in this section\nThen we create embeddings for each page using the OpenAI API. Embeddings translate text into numeric vectors. When two vector embeddings are close to each other (low distance), we expect the text to be similar in meaning. OpenAI offers a number of embedding models for users to choose from. At the time of writing this, text-embedding-ada-002 is is the cheapest option and outperforms the other models.\nBelow is example code (not run), to show how to use OpenAI embedding models. (I didn’t want to pay for any more uses of the OpenAI API or host a reproducible example on this site. )\n\nimport tiktoken \nfrom openai import Embedding\n\ndf[\"embeddings\"] = df[\"text\"].apply(lambda x: Embedding.create(input=x,model=\"text-embedding-ada-002\",temperature=0.25)[\"data\"][0][\"embedding\"])"
   },
   {
     "objectID": "posts/web_scraper/index.html#informational-retrieval",
@@ -231,10 +154,66 @@
     "text": "Prompting GPT-4 With Context\nFinally, we submit our query to GPT-4 along with the context we’ve found in the previous steps.\n\nresponse = openai.ChatCompletion.create(\n            messages=[\n                {\n                    \"role\": \"system\",\n                    \"content\": \"You are a web scraping assistant. Answer the user's questions based\"\n                    + \"on the context below. If the question can't be answered based on the context,\"\n                    + f'say \"I don\\'t know\"\\n\\nContext: {context}',\n                },\n                {\n                    \"role\": \"user\",\n                    \"content\": question_context.question,\n                },\n            ],\n            temperature=0.15,\n            top_p=1,\n            frequency_penalty=0,\n            presence_penalty=0,\n            stop=stop_sequence,\n            model=model,\n        )\nresponse[\"choices\"][0][\"message\"][\"content\"]\n\n\n\n\n- Business Advising\n- Business Classes\n- Start-up Assistance\n- Existing Business Development\n- Training Programs\n- Research Capabilities\n- Business Plan Preparation\n- SBA Loan Paperwork Preparation\n- Practical Business Assistance\n- Mailing List with Resources and Information\n- Start-up Business Assessment\n- Existing Business Assessment"
   },
   {
-    "objectID": "posts/web_scraper/index.html#webscraping",
-    "href": "posts/web_scraper/index.html#webscraping",
-    "title": "LLM Aided Webscraping",
-    "section": "Webscraping",
-    "text": "Webscraping\nAs an example, I’m showing text scraped from the SBDC website for Tyler, TX and every sub-page of the main URL. Results are stored in a pandas.DataFrame.\n\nimport pandas as pd\nimport numpy as np\n\ndf = pd.read_csv(\"processed/scraped.csv\", index_col=None, header=0)\n\n\n\n\n\n  \n\n\n\nYou can see text scraped from one page in more detail by expanding the code chunk below:\n\n\nCode\n# example_text = \"Business Advice | Tyler Small Business Development Center Follow Us x a ! 903-510-2975 Directions Business Advising The SBDC offers free one-on-one advising for start-up and existing businesses in the retail, wholesale, manufacturing, and service industries. Our Advisors can help you. Prepare financial projections for loan package. Conduct financial analysis and improve profitability Develop competitive strategies  Cope with government regulation and taxes Design a marketing plan Understand and secure loans and other sources of capital Keep abreast of current technology Brainstorming and research Restructure debt analysis Prepackage Interview Process for SBA Loans Turnaround Advising Follow these steps to meet with a business advisor Step 1 Fill out/ download the following forms. Start-up Business Assessment Existing Business Assessment Fill out the Form 641/Client Agreement Step 2: You will be contacted by our office to direct you to the appropriate resource.  How to Start a Business and Market lt on Social Media Tyler SBDC offers a low-cost monthly class for individuals interested in starting a small business. This single-session class provides an excellent opportunity for individuals to determine if small business ownership is right for them. This class also covers current social media trends and how to use platforms such as Instagram, Facebook, YouTube, and more to market their new business. This class is held on Tuesdays as follows: Tuesday 6/6 6-8 pm Tuesday 7/11 6-8 pm Tuesday 8/1 6-8 pm Location: RTDC 112 Registration Fee: $25 Call TJC School of Continuing Studies at 903-510-2900 to register and pay Contact Us\"\n\n\n\nEmbedding\n\nEstimating Cost and Resources\nFirst, we estimate how much of our 8194 token limit will be used by this text using the tiktoken library (Github). tiktoken is a open-source byte pair encoding (BPE) tokenizer. You can use this approximate how many tokens you’ll send to the Chat-GPT API. The example text uses about 329 tokens.\n\nimport tiktoken \ntokenizer = tiktoken.get_encoding(\"cl100k_base\")\n\ndf['n_tokens'] = df['text'].apply(lambda x: len(tokenizer.encode(x)))\n\n\n\n\n\n  \n\n\n\n\n\n\nEmbedding Text\nNote: You’ll need to make an access key for OpenAI to run any of the code in this section\nThen we create embeddings for each page using the OpenAI API. Embeddings translate text into numeric vectors. When two vector embeddings are close to each other (low distance), we expect the text to be similar in meaning. OpenAI offers a number of embedding models for users to choose from. At the time of writing this, text-embedding-ada-002 is is the cheapest option and outperforms the other models.\nBelow is example code (not run), to show how to use OpenAI embedding models. (I didn’t want to pay for any more uses of the OpenAI API or host a reproducible example on this site. )\n\nimport tiktoken \nfrom openai import Embedding\n\ndf[\"embeddings\"] = df[\"text\"].apply(lambda x: Embedding.create(input=x,model=\"text-embedding-ada-002\",temperature=0.25)[\"data\"][0][\"embedding\"])"
+    "objectID": "posts/csv_chunks/index.html",
+    "href": "posts/csv_chunks/index.html",
+    "title": "Reading Large Delimited Data in Chunks With Readr",
+    "section": "",
+    "text": "I recently had to work with several large CSV files, ranging in size from 8Gb to 12Gb. I needed to dplyr::group_by() a categorical variable and count the number of unique records with dplyr::n_distinct(). I ran out of RAM whenever I loaded the entire data set into R with readr::read_csv() or data.table::fread(). I tried to load the data in chunks (see more below), but found the existing documentation to be confusing. I’ve provided a system that works for me in the blog post."
+  },
+  {
+    "objectID": "posts/csv_chunks/index.html#use-case",
+    "href": "posts/csv_chunks/index.html#use-case",
+    "title": "Reading Large Delimited Data in Chunks With Readr",
+    "section": "",
+    "text": "I recently had to work with several large CSV files, ranging in size from 8Gb to 12Gb. I needed to dplyr::group_by() a categorical variable and count the number of unique records with dplyr::n_distinct(). I ran out of RAM whenever I loaded the entire data set into R with readr::read_csv() or data.table::fread(). I tried to load the data in chunks (see more below), but found the existing documentation to be confusing. I’ve provided a system that works for me in the blog post."
+  },
+  {
+    "objectID": "posts/csv_chunks/index.html#what-is-chunking",
+    "href": "posts/csv_chunks/index.html#what-is-chunking",
+    "title": "Reading Large Delimited Data in Chunks With Readr",
+    "section": "What is chunking?",
+    "text": "What is chunking?\nSometimes you have a dataset that’s too large to fit in memory. One way to get around this is to divide your data into subsets (“chunks”) that do fit into memory and process each chunk separately. You can aggregate the processed chunks together after you’ve reduced the size. This is basically a low-tech implementation of the MapReduce framework used Apache Hadoop"
+  },
+  {
+    "objectID": "posts/csv_chunks/index.html#chunks-in-readr",
+    "href": "posts/csv_chunks/index.html#chunks-in-readr",
+    "title": "Reading Large Delimited Data in Chunks With Readr",
+    "section": "Chunks in readr",
+    "text": "Chunks in readr\nYou can read deliminated data in chunks by using any of the read_*_chunked() functions from the readr package. I’ll focus on read_csv_chunked() with a CSV version of mtcars.\nThe function requires at least two arguments:read_csv_chunked(file, callback). file is the file path of of your.csv file. The calllback argument is a little more complicated. The documentation for thisis sparse and aimed at power-users.\nCallbacks tell R what action to take when it’s done reading a chunk. There are three classes of of callbacks that you’re likely to use. Each callback applies a function f() to the chunk before returning a value.\n\nDataFrameCallback - Apply f to each chunk then combine results of f(chunk) by appending rows into a tibble\n\nExample: Read each chunk -&gt; Remove records that don’t meet condition –&gt; append rows\n\nSideEffectChunkCallback - Apply f to reach chunk and return nothing\n\nExample: Reach each chunk –&gt; write each chunk to a .parquet file\n\nAccumulateCallBack - Accumulates a single result across chunks\n\nExample: Count the number of distinct IDs in each chunk –&gt; add them together\n\n\nTo use a callback in read_csv_chunked you declare the function to apply to each chunk then make a new ChunkCallback class. The function must have the arguments data and pos. The data argument holds the current data.frame chunk and pos (short for position) holds the line number that the current chunk begins on. You must include pos in your function arguments even if function does not use it. If you use AccumulateCallBack you must include a third argument, acc, which stores the current value of their accumulator.\nWe’ll use a simple example to show how read a .csv file in chunks with a custom callback function. We load mtcars in chunks and keep cars with manual transmission (am == 0) and miles/gallon over over 20 (mpg &gt;= 20).\n\nlibrary(readr)\nlibrary(dplyr)\ndata(mtcars); write_csv(mtcars, \"mtcars.csv\")\n\n# Function to pass to DataFrameCallback$new()\nf = function(data, pos) {  # pos must be an  argument even though unused\n  data %&gt;% \n    filter(am == 0L, mpg &gt;= 20)\n}\n\nchunked_df = read_csv_chunked(\n  file = \"mtcars.csv\",\n  callback = DataFrameCallback$new(f),\n  chunk_size = 5L\n)\n\nchunked_df\n\n# A tibble: 4 × 11\n    mpg   cyl  disp    hp  drat    wt  qsec    vs    am  gear  carb\n  &lt;dbl&gt; &lt;dbl&gt; &lt;dbl&gt; &lt;dbl&gt; &lt;dbl&gt; &lt;dbl&gt; &lt;dbl&gt; &lt;dbl&gt; &lt;dbl&gt; &lt;dbl&gt; &lt;dbl&gt;\n1  21.4     6  258    110  3.08  3.22  19.4     1     0     3     1\n2  24.4     4  147.    62  3.69  3.19  20       1     0     4     2\n3  22.8     4  141.    95  3.92  3.15  22.9     1     0     4     2\n4  21.5     4  120.    97  3.7   2.46  20.0     1     0     3     1"
+  },
+  {
+    "objectID": "posts/csv_chunks/index.html#why-didnt-you-use-xyz",
+    "href": "posts/csv_chunks/index.html#why-didnt-you-use-xyz",
+    "title": "Reading Large Delimited Data in Chunks With Readr",
+    "section": "Why didn’t you use XYZ?",
+    "text": "Why didn’t you use XYZ?\nWhy didn’t you use XYZ?\nYou can use distributed data processing like Spark or Dask. I didn’t have access to either.\nThere are options for reading chunked data inside and outside of R.\n\nPython’s pandas.read_csv(..., chunksize) returns an iterator to read a read a CSV in chunks. This is a good option if you’re okay leaving the R and tidyverse ecosystem.\nfread(...,) from data.table can read files in chunks using the skip and nrows arguments. However, the user has to manually program this functionality. Things get complicated if you want to keep column names or apply a function to each chunk.\nR’s LaF package offers fast, random access to ASCII files without loading the file into memory. read_chunkwise() from the chunked package is a wrapper that provides dplyr like synatx to Laf. I couldn’t get either package to work, and I couldn’t diagnose the problem from the error messages."
+  },
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "Eli Kravitz, PhD",
+    "section": "",
+    "text": "Hello!\nI am a statistician and data scientist. I use statistics and machine learning to help federal agencies answer open-ended research questions. This includes sorting through large, messy datasets, benchmarking models, and building data processing pipelines. Before this, I designed clinical trials for the life sciences industry.\nMost of my work involves extensive programming in R and Python. I am a long-time R user who keeps up with latest developments in the language. You can see some of my thoughts on R and Python in the Posts section of this website. I occasionally answer statistics and programming questions on Stack Exchange.\nIn my free time I play music, cook and try (often unsuccessfully) to manage my border collie. You can see me doing the latter two here."
+  },
+  {
+    "objectID": "presentations/pa_presentation/index.html",
+    "href": "presentations/pa_presentation/index.html",
+    "title": "Establishing Physical Activity Guidelines",
+    "section": "",
+    "text": "This is an old presentation. When I was getting ready to finish my PhD, this is what I presented whenever I was asked to give a talk during an interview.\nWe developed physical activity guidelines by fitting shaped constrained regression models to self-reported physical activity questionnaires. We scaled the model’s fitted values so they were between 0 and 100, with 0 indicate extremely poor levels of physical activity and 100 representation perfect levels of physical activity.\nLink to the presentation"
+  },
+  {
+    "objectID": "presentations/os_crossover/index.html",
+    "href": "presentations/os_crossover/index.html",
+    "title": "Adjustments for Patient Crossover in Clinical Trials",
+    "section": "",
+    "text": "This presentation was part of an information session and workshop for Oncology statisticians. I review methods to adjust estimates of treatment effect when clinical trial patients can crossover from the standard-of-care arm to the treatment arm. I provide references so readers can review topic relevant to them at a later time.\nLink to presentation"
+  },
+  {
+    "objectID": "presentations.html",
+    "href": "presentations.html",
+    "title": "Presentations",
+    "section": "",
+    "text": "Dynamic Predictions for the Current Population Survey\n\n\n\n\n\n\n\n\n\n\n\n\nJun 11, 2023\n\n\nEli Kravitz\n\n\n\n\n\n\n  \n\n\n\n\nGraphical Hypothesis Testing\n\n\n\n\n\n\n\n\n\n\n\n\nFeb 1, 2021\n\n\nEli Kravitz\n\n\n\n\n\n\n  \n\n\n\n\nAdjustments for Patient Crossover in Clinical Trials\n\n\n\n\n\n\n\n\n\n\n\n\nFeb 1, 2021\n\n\nEli Kravitz\n\n\n\n\n\n\n  \n\n\n\n\nReevaluating Composite Scores with Flexible Regression and Variable Selection\n\n\n\n\n\n\n\n\n\n\n\n\nMar 1, 2020\n\n\nEli Kravitz\n\n\n\n\n\n\n  \n\n\n\n\nEstablishing Physical Activity Guidelines\n\n\nAn Application of Shape Constrained Regression\n\n\n\n\n\n\n\n\n\nJul 1, 2018\n\n\nEli Kravitz\n\n\n\n\n\n\nNo matching items"
   }
 ]
